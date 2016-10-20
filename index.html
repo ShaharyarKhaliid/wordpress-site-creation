@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+    </head>
+    <body>
+        <div style="width:173px; background:#CCC;">
+    <form name="frm">
+        <input name="result">
+        <br>
+        <br>
+        <input type="button" name="1" value="1" onclick="run1()" style="width:40px;">
+        <input type="button" name="2" value="2" onclick="run2()" style="width:40px;">    
+        <input type="button" name="3" value="3" onclick="run3()" style="width:40px;">
+        <input type="button" name="plus" value="+" onclick="runplus()" style="width:40px;">
+        <br>
+        <br>
+        <input type="button" name="4" value="4" onclick="run4()" style="width:40px;">
+        <input type="button" name="5" value="5" onclick="run5()" style="width:40px;">    
+        <input type="button" name="6" value="6" onclick="run6()" style="width:40px;">
+        <input type="button" name="minus" value="-" onclick="runminus()" style="width:40px;">
+        <br>
+        <br>
+        <input type="button" name="7" value="7" onclick="run7()" style="width:40px;">
+        <input type="button" name="8" value="8" onclick="run8()" style="width:40px;">    
+        <input type="button" name="9" value="9" onclick="run9()" style="width:40px;">
+        <input type="button" name="/" value="/" onclick="rundivide()" style="width:40px;">
+        <br>
+        <br>
+        <input type="button" name="0" value="0" onclick="run0()" style="width:40px;">
+        <input type="button" name="." value="." onclick="runpoint()" style="width:40px;">    
+        <input type="button" name="%" value="%" onclick="runpercent()" style="width:40px;">
+        <input type="button" name="X" value="X" onclick="runmultiply()" style="width:40px;">
+        <br>
+        <br>
+        <input type="button" name="!" value="C" onclick="runclear()" style="width:83px;">
+        <input type="button" name="calcu" value="=" onclick="evalu()" style="width:83px;">
+        
+        </form>
+        </div>
+        <script>
+        function run1()
+            {document.frm.result.value += "1"; }
+            function run2()
+            {document.frm.result.value += "2"; }
+            function run3()
+            {document.frm.result.value += "3"; }
+            function runplus()
+            {document.frm.result.value += "+"; }
+            
+            function run4()
+            {document.frm.result.value += "4"; }
+            function run5()
+            {document.frm.result.value += "5"; }
+            function run6()
+            {document.frm.result.value += "6"; }
+            function runminus()
+            {document.frm.result.value += "-"; }
+            
+            function run7()
+            {document.frm.result.value += "7"; }
+            function run8()
+            {document.frm.result.value += "8"; }
+            function run9()
+            {document.frm.result.value += "9"; }
+            function rundivide()
+            {document.frm.result.value += "/"; }
+            
+            function run0()
+            {document.frm.result.value += "0"; }
+            function runpoint()
+            {document.frm.result.value += "."; }
+            function runpercent()
+            {document.frm.result.value += "%"; }
+            function runmultiply()
+            {document.frm.result.value += "*"; }
+            
+            function runclear()
+            {document.frm.result.value= ""}
+            
+            function evalu() 
+            {
+                var evalo = eval (document.frm.result.value)
+                document.frm.result.value = evalo;
+            }
+        </script>
+        
+    </body>
+</html>
